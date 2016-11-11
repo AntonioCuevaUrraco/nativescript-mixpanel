@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "noEmitHelpers": true
+    },
+    "files": [
+      "nativescript-mixpanel.android.ts", 
+      "nativescript-mixpanel.ios.ts"
+    ],
+    "compileOnSave": false
+}
