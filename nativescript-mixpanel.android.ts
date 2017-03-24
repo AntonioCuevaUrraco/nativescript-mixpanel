@@ -62,6 +62,15 @@ export function track(eventName, props) {
     }
 }
 
+export function timeEvent(eventName) {
+    if (mixpanel) {
+        if (eventName) {
+            var _eventName = eventName + "";
+            mixpanel.timeEvent(_eventName);
+        }
+    }
+}
+
 export function registerSuperProperties(props) {
     if (mixpanel) {
         if (props) {

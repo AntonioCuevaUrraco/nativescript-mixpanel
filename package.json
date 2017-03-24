@@ -1,6 +1,6 @@
 {
   "name": "nativescript-mixpanel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mixpanel tracking",
   "main": "nativescript-mixpanel.js",
   "nativescript": {
@@ -24,6 +24,13 @@
     "name": "Antonio Cueva",
     "email": "cuevajodar@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "Blake Nussey",
+      "email": "blake@stageme.com",
+      "url": "https://github.com/bnussey"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/AntonioCuevaUrraco/nativescript-mixpanel/issues"
   },

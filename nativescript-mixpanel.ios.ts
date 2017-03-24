@@ -40,6 +40,15 @@ export function track(eventName, props?) {
     }
 }
 
+export function timeEvent(eventName) {
+    if (mixpanel) {
+        if (eventName) {
+            var _eventName = eventName + "";
+            mixpanel.timeEvent(_eventName);
+        }
+    }
+}
+
 export function identify(id, extraAtributes?) {
     if (mixpanel) {
         if (id) {
@@ -67,10 +76,10 @@ export function registerSuperProperties(props) {
     if (mixpanel) {
         if (props) {
             let iosPropsMutable = NSMutableDictionary.alloc().init();
-                for (let key in props) {
-                    iosPropsMutable.setObjectForKey(props[key] + "", key + "");
-                }
-                let iosProps = NSDictionary.dictionaryWithDictionary(iosPropsMutable);
+            for (let key in props) {
+                iosPropsMutable.setObjectForKey(props[key] + "", key + "");
+            }
+            let iosProps = NSDictionary.dictionaryWithDictionary(iosPropsMutable);
             mixpanel.registerSuperProperties(iosProps);
         }
         else {
