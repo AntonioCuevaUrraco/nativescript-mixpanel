@@ -26,12 +26,12 @@ mixpanelInit(YOUR_KEY_HERE);
 
 ## API
 
-- **init(token: any)**Ï
-- **track(eventName: any, props?: any)**Ï
-- **timeEvent(eventName: any)**Ï
-- **identify(id: any, extraAtributes?: any)**Ï
-- **registerSuperProperties(props: any)**Ï
-- **addPushDeviceToken(token: any)()**Ï
+- **init(token: any)**
+- **track(eventName: any, props?: any)**
+- **timeEvent(eventName: any)**
+- **identify(id: any, extraAtributes?: any)**
+- **registerSuperProperties(props: any)**
+- **addPushDeviceToken(token: any)()**
 
 ### Contributors
 
