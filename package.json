@@ -1,8 +1,9 @@
 {
   "name": "nativescript-mixpanel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Mixpanel tracking",
-  "main": "nativescript-mixpanel.js",
+  "main": "nativescript-mixpanel",
+  "typings": "nativescript-mixpanel.d.ts",
   "nativescript": {
     "platforms": {
       "android": "2.2.0",
