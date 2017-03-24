@@ -5,7 +5,8 @@
 /demo/platforms/
 node_modules/
 .settings/
-
+!nativescript-mixpanel.d.ts
+tsconfig.json
 .DS_Store
 *.tar
 *.tgz
