@@ -1,15 +1,15 @@
-import * as applicationModule from "application";
+import * as app from 'application';
 
 let mixpanel;
 
 export function init(token) {
-    let activity = applicationModule.android.foregroundActivity || applicationModule.android.startActivity;
+    let context = com.tns.NativeScriptApplication.getInstance();
     if (token) {
-        if (com.mixpanel && activity) {
-            mixpanel = com.mixpanel.android.mpmetrics.MixpanelAPI.getInstance(activity, token + "");
+        if (com.mixpanel && context) {
+            mixpanel = com.mixpanel.android.mpmetrics.MixpanelAPI.getInstance(context, token + "");
         }
         else {
-            console.log("MIXPANEL PLUGIN: We can not find the mixpanil lib, make sure is added during building");
+            console.log("MIXPANEL PLUGIN: We can not find the mixpanel lib, make sure is added during building");
         }
     }
     else {
