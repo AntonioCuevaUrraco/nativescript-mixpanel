@@ -99,3 +99,18 @@ export function addPushDeviceToken(token) {
         console.log("MIXPANEL PLUGIN: You need to init first");
     }
 }
+
+export function alias(alias) {
+    if (mixpanel) {
+        if (alias) {
+            var _alias = alias + "";
+            mixpanel.createAliasForDistinctID(_alias, mixpanel.distinctId);
+        }
+        else {
+            console.log("MIXPANEL PLUGIN: You need to pass an alias");
+        }
+    }
+    else {
+        console.log("MIXPANEL PLUGIN: You need to init first");
+    }
+}
