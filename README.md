@@ -32,6 +32,7 @@ mixpanelInit(YOUR_KEY_HERE);
 - **identify(id: any, extraAtributes?: any)**
 - **registerSuperProperties(props: any)**
 - **addPushDeviceToken(token: any)()**
+- **alias(alias: string)()**
 
 ### Contributors
 
