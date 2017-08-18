@@ -6,15 +6,15 @@ export declare class MixpanelHelper extends Common {
     // take the ios or android .d.ts files and copy/paste them here
     static init(token: any): void;
 
-    track(eventName: any, props: any): void;
+    static track(eventName: any, props: any): void;
 
-    timeEvent(eventName: any): void;
+    static timeEvent(eventName: any): void;
 
-    identify(id: any, extraAtributes?: any): void;
+    static identify(id: any, extraAtributes?: any): void;
 
-    registerSuperProperties(props: any): void;
+    static registerSuperProperties(props: any): void;
 
-    addPushDeviceToken(token: any): void;
+    static addPushDeviceToken(token: any): void;
 
-    alias(alias: string): void;
+    static alias(alias: string): void;
 }

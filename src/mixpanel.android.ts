@@ -25,7 +25,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    identify(id, extraAtributes?) {
+    static identify(id, extraAtributes?) {
         if (mixpanel) {
             if (id) {
                 mixpanel.identify(id + "");
@@ -45,7 +45,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    track(eventName, props) {
+    static track(eventName, props) {
         if (mixpanel) {
             if (eventName) {
                 if (props) {
@@ -70,7 +70,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    timeEvent(eventName) {
+    static timeEvent(eventName) {
         if (mixpanel) {
             if (eventName) {
                 var _eventName = eventName + "";
@@ -79,7 +79,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    registerSuperProperties(props) {
+    static registerSuperProperties(props) {
         if (mixpanel) {
             if (props) {
                 let androidProps = new org.json.JSONObject();
@@ -97,7 +97,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    addPushDeviceToken(token) {
+    static addPushDeviceToken(token) {
         if (mixpanel) {
             mixpanel.getPeople().initPushHandling(token + "");
         }
@@ -106,7 +106,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    alias(alias) {
+    static alias(alias) {
         if (mixpanel) {
             if (alias) {
                 var _alias = alias + "";

@@ -1,1 +1,1 @@
-pod 'Mixpanel','~> 3.1.9'
+pod 'Mixpanel'

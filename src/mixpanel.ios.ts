@@ -1,6 +1,7 @@
 import { Common } from './mixpanel.common';
 
-declare var Mixpanel;
+declare var Mixpanel: any;
+
 let mixpanel;
 
 export class MixpanelHelper extends Common {
@@ -25,7 +26,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    track(eventName, props?) {
+    static track(eventName, props?) {
         if (mixpanel) {
             if (eventName) {
                 let _eventName = eventName + "";
@@ -50,7 +51,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    timeEvent(eventName) {
+    static timeEvent(eventName) {
         if (mixpanel) {
             if (eventName) {
                 var _eventName = eventName + "";
@@ -59,7 +60,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    identify(id, extraAtributes?) {
+    static identify(id, extraAtributes?) {
         if (mixpanel) {
             if (id) {
                 let _id = id + "";
@@ -82,7 +83,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    registerSuperProperties(props) {
+    static registerSuperProperties(props) {
         if (mixpanel) {
             if (props) {
                 let iosPropsMutable = NSMutableDictionary.alloc().init();
@@ -101,7 +102,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    addPushDeviceToken(token) {
+    static addPushDeviceToken(token) {
         if (mixpanel) {
             mixpanel.people.addPushDeviceToken(token + "");
         }
@@ -110,7 +111,7 @@ export class MixpanelHelper extends Common {
         }
     }
 
-    alias(alias) {
+    static alias(alias) {
         if (mixpanel) {
             if (alias) {
                 var _alias = alias + "";
