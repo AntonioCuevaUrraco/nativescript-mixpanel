@@ -1,40 +1,49 @@
-# Your Plugin Name
 
-Add your plugin badges here. See [nativescript-urlhandler](https://github.com/hypery2k/nativescript-urlhandler) for example.
-
-Then describe what's the purpose of your plugin. 
-
-In case you develop UI plugin, this is where you can add some screenshots.
-
-## (Optional) Prerequisites / Requirements
-
-Describe the prerequisites that the user need to have installed before using your plugin. See [nativescript-firebase plugin](https://github.com/eddyverbruggen/nativescript-plugin-firebase) for example.
+# NativeScript Mixpanel
+A NativeScript plugin to provide the ability to integrate with Mixpanel.
 
 ## Installation
+From your command prompt/terminal go to your app's root folder and execute:
 
-Describe your plugin installation steps. Ideally it would be something like:
+`tns plugin add nativescript-mixpanel`
 
-```javascript
-tns plugin add <your-plugin-name>
+## Usage
+
+###
+
+## Android
+
+On Android `app.gradle` file, add the following dependency:
+
+	compile 'com.google.android.gms:play-services-gcm:+'
+
+
+## Angular Native (NativeScript Angular) Usage
+
+In main.ts add the following before you bootstrap
+
+``` TS
+
+import {MixpanelHelper} from "nativescript-mixpanel";
+MixpanelHelper.init(YOUR_KEY_HERE);
+
 ```
 
-## Usage 
-
-Describe any usage specifics for your plugin. Give examples for Android, iOS, Angular if needed. See [nativescript-drop-down](https://www.npmjs.com/package/nativescript-drop-down) for example.
-	
-	```javascript
-    Usage code snippets here
-    ```)
 
 ## API
+``` TS
+import {MixpanelHelper} from "nativescript-mixpanel";
+```
+- **MixpanelHelper.init(token: any)**
+- **MixpanelHelper.track(eventName: any, props?: any)**
+- **MixpanelHelper.timeEvent(eventName: any)**
+- **MixpanelHelper.identify(id: any, extraAtributes?: any)**
+- **MixpanelHelper.registerSuperProperties(props: any)**
+- **MixpanelHelper.addPushDeviceToken(token: any)()**
+- **MixpanelHelper.alias(alias: string)()**
 
-Describe your plugin methods and properties here. See [nativescript-feedback](https://github.com/EddyVerbruggen/nativescript-feedback) for example.
-    
-| Property | Default | Description |
-| --- | --- | --- |
-| some property | property default value | property description, default values, etc.. |
-| another property | property default value | property description, default values, etc.. |
-    
-## License
+### Contributors
 
-Apache License Version 2.0, January 2004
+- Antonio Cueva Urraco
+- Blake Nussey
+- Demetrio Filocamo

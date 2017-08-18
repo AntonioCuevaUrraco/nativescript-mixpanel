@@ -12,5 +12,4 @@ dependencies {
     // Describe plugin native Android dependencies like
 	// compile "groupName:pluginName:ver" 
     compile "com.mixpanel.android:mixpanel-android:5.+"
-	compile 'com.google.android.gms:play-services-gcm:+'
 }
