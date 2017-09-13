@@ -1,0 +1,15 @@
+/* Include.gradle configuration: http://docs.nativescript.org/plugins/plugins#includegradle-specification */
+
+android {
+	productFlavors {
+		"nativescript-mixpanel" {
+			dimension "nativescript-mixpanel"
+		}
+	}
+}
+
+dependencies {
+    // Describe plugin native Android dependencies like
+	// compile "groupName:pluginName:ver" 
+    compile "com.mixpanel.android:mixpanel-android:5.+"
+}
