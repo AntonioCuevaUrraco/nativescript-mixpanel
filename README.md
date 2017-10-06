@@ -1,3 +1,6 @@
+[![npm](https://img.shields.io/npm/v/nativescript-mixpanel.svg)](https://www.npmjs.com/package/nativescript-mixpanel)
+[![npm](https://img.shields.io/npm/dt/nativescript-mixpanel.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-mixpanel)
+
 
 # NativeScript Mixpanel
 A NativeScript plugin to provide the ability to integrate with Mixpanel.

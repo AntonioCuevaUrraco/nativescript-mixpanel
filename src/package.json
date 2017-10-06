@@ -1,6 +1,6 @@
 {
     "name": "nativescript-mixpanel",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Mixpanel tracking",
     "main": "mixpanel",
     "typings": "index.d.ts",
@@ -46,7 +46,7 @@
         {
             "name": "Demetrio Filocamo",
             "email": "filocamo@demetr.io",
-            "url": "https://github.com/bnussey"
+            "url": "https://github.com/demetrio812"
         }
     ],
     "bugs": {
