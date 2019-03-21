@@ -21,7 +21,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <application>
-        <receiver android:name="com.mixpanel.android.mpmetrics.GCMReceiver"
+        <!-- <receiver android:name="com.mixpanel.android.mpmetrics.GCMReceiver"
                   android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action
@@ -30,6 +30,6 @@
                         android:name="com.google.android.c2dm.intent.REGISTRATION"/>
                 <category android:name="your.package.name"/>
             </intent-filter>
-        </receiver>
+        </receiver> -->
     </application>
 </manifest>
