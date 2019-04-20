@@ -1,6 +1,6 @@
 {
     "name": "nativescript-mixpanel",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Mixpanel tracking",
     "main": "mixpanel",
     "typings": "index.d.ts",
