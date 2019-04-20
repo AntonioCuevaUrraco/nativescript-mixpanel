@@ -12,16 +12,8 @@ From your command prompt/terminal go to your app's root folder and execute:
 
 ## Usage
 
-###
 
-## Android
-
-On Android `app.gradle` file, add the following dependency:
-
-	compile 'com.google.android.gms:play-services-gcm:+'
-
-
-## Angular Native (NativeScript Angular) Usage
+### Angular Native (NativeScript Angular) Usage
 
 In main.ts add the following before you bootstrap
 
