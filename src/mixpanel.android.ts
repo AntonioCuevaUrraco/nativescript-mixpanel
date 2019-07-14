@@ -121,4 +121,21 @@ export class MixpanelHelper extends Common {
         }
     }
 
+    static reset() {
+        if (mixpanel) {
+            mixpanel.reset();
+        }
+        else {
+            console.log("MIXPANEL PLUGIN: You need to init first");
+        }
+    }
+
+    static flush() {
+        if (mixpanel) {
+            mixpanel.flush();
+        }
+        else {
+            console.log("MIXPANEL PLUGIN: You need to init first");
+        }
+    }
 }

@@ -17,4 +17,8 @@ export declare class MixpanelHelper extends Common {
     static addPushDeviceToken(token: any): void;
 
     static alias(alias: string): void;
+
+    static reset(): void;
+
+    static flush(): void;
 }

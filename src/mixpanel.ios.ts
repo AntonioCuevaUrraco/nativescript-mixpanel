@@ -58,6 +58,9 @@ export class MixpanelHelper extends Common {
                 mixpanel.timeEvent(_eventName);
             }
         }
+        else {
+            console.log("MIXPANEL PLUGIN: You need to init first");
+        }
     }
 
     static identify(id, extraAtributes?) {
@@ -120,6 +123,24 @@ export class MixpanelHelper extends Common {
             else {
                 console.log("MIXPANEL PLUGIN: You need to pass an alias");
             }
+        }
+        else {
+            console.log("MIXPANEL PLUGIN: You need to init first");
+        }
+    }
+
+    static reset() {
+        if (mixpanel) {
+            mixpanel.reset();
+        }
+        else {
+            console.log("MIXPANEL PLUGIN: You need to init first");
+        }
+    }
+
+    static flush() {
+        if (mixpanel) {
+            mixpanel.flush();
         }
         else {
             console.log("MIXPANEL PLUGIN: You need to init first");

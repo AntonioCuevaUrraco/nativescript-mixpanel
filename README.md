@@ -34,8 +34,10 @@ import {MixpanelHelper} from "nativescript-mixpanel";
 - **MixpanelHelper.timeEvent(eventName: any)**
 - **MixpanelHelper.identify(id: any, extraAtributes?: any)**
 - **MixpanelHelper.registerSuperProperties(props: any)**
-- **MixpanelHelper.addPushDeviceToken(token: any)()**
-- **MixpanelHelper.alias(alias: string)()**
+- **MixpanelHelper.addPushDeviceToken(token: any)**
+- **MixpanelHelper.alias(alias: string)**
+- **MixpanelHelper.reset()**
+- **MixpanelHelper.flush()**
 
 ### Contributors
 
