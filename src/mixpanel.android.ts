@@ -1,5 +1,5 @@
 import { Common } from './mixpanel.common';
-
+import * as app from 'tns-core-modules/application';
 declare var com;
 
 let mixpanel;
@@ -11,7 +11,7 @@ export class MixpanelHelper extends Common {
     }
 
     static init(token) {
-        let context = com.tns.NativeScriptApplication.getInstance();
+        const context = app.android.context
         if (token) {
             if (com.mixpanel && context) {
                 mixpanel = com.mixpanel.android.mpmetrics.MixpanelAPI.getInstance(context, token + "");
