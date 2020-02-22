@@ -7,11 +7,11 @@ let mixpanel;
 export class MixpanelHelper extends Common {
 
     constructor() {
-        super()
+        super();
     }
 
     static init(token) {
-        const context = app.android.context
+        const context = app.android.context;
         if (token) {
             if (com.mixpanel && context) {
                 mixpanel = com.mixpanel.android.mpmetrics.MixpanelAPI.getInstance(context, token + "");
@@ -73,7 +73,7 @@ export class MixpanelHelper extends Common {
     static timeEvent(eventName) {
         if (mixpanel) {
             if (eventName) {
-                var _eventName = eventName + "";
+                const _eventName = eventName + "";
                 mixpanel.timeEvent(_eventName);
             }
         }
@@ -109,7 +109,7 @@ export class MixpanelHelper extends Common {
     static alias(alias) {
         if (mixpanel) {
             if (alias) {
-                var _alias = alias + "";
+                const _alias = alias + "";
                 mixpanel.alias(_alias, null);
             }
             else {

@@ -7,7 +7,7 @@ let mixpanel;
 export class MixpanelHelper extends Common {
 
     constructor() {
-        super()
+        super();
     }
 
 
@@ -54,7 +54,7 @@ export class MixpanelHelper extends Common {
     static timeEvent(eventName) {
         if (mixpanel) {
             if (eventName) {
-                var _eventName = eventName + "";
+                const _eventName = eventName + "";
                 mixpanel.timeEvent(_eventName);
             }
         }
@@ -117,7 +117,7 @@ export class MixpanelHelper extends Common {
     static alias(alias) {
         if (mixpanel) {
             if (alias) {
-                var _alias = alias + "";
+                const _alias = alias + "";
                 mixpanel.createAliasForDistinctID(_alias, mixpanel.distinctId);
             }
             else {
