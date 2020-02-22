@@ -33,7 +33,7 @@ jobs:
           sudo pip install six
       - name: Setup NativeScript CLI
         run: |
-          echo no | npm i -g nativescript
+          echo no | npm i -g nativescript@3.4.4
           tns usage-reporting disable
           tns error-reporting disable
       - name: Build Android Demo App
